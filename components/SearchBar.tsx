@@ -18,21 +18,19 @@ const isValidAmazonProductUrl = (url: string) => {
     return false;
 
   }
-
+  return false;
 
 }
 const SearchBar = () => {
-  const [searchPrompt, setSearchPrompt] = useState('')
+  const [searchPrompt, setSearchPrompt] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async(event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const isValidLink = isValidAmazonProductUrl(searchPrompt)
+    const isValidLink = isValidAmazonProductUrl(searchPrompt);
 
-    if (!isValidLink) {
-    return alert('Please enter a valid Amazon product link')
-    }
+    if (!isValidLink) return alert('Please enter a valid Amazon product link')
 
     try {
       setIsLoading(true);
