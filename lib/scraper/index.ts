@@ -30,9 +30,7 @@ export async function scrapeAmazonProduct(url: string) {
         // scrape the product title
         const title = $("#productTitle").text().trim();
         
-
         console.log({title})
-       
     } catch (error: any) {
         throw new Error(`Failed to scrape product: ${error.message}`);
     }
