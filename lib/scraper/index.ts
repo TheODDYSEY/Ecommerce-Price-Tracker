@@ -34,6 +34,7 @@ export async function scrapeAmazonProduct(url: string) {
           $('.priceToPay span.a-price-whole'),
           $('.a.size.base.a-color-price'),
           $('.a-button-selected .a-color-base'),
+          $('a-price.a-text-price')
         );
     
         const originalPrice = extractPrice(
@@ -77,8 +78,8 @@ export async function scrapeAmazonProduct(url: string) {
           highestPrice: Number(originalPrice) || Number(currentPrice),
           averagePrice: Number(currentPrice) || Number(originalPrice),
         }
-    
-        return data;
+    console.log(data)
+        // return data;
       } catch (error: any) {
         console.log(error);
       }
