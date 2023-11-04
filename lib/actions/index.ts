@@ -1,12 +1,11 @@
 "use server"
 
 import { revalidatePath } from "next/cache";
-// import Product from "../models/product.model";
+import Product from "../models/product.models";
 import { connectToDB } from "../mongoose";
 import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
-import Product from "../models/product.models";
 // import { generateEmailBody, sendEmail } from "../nodemailer";
 
 export async function scrapeAndStoreProduct(productUrl: string) {
@@ -76,23 +75,23 @@ export async function getAllProducts() {
   }
 }
 
-// export async function getSimilarProducts(productId: string) {
-//   try {
-//     connectToDB();
+export async function getSimilarProducts(productId: string) {
+  try {
+    connectToDB();
 
-//     const currentProduct = await Product.findById(productId);
+    const currentProduct = await Product.findById(productId);
 
-//     if(!currentProduct) return null;
+    if(!currentProduct) return null;
 
-//     const similarProducts = await Product.find({
-//       _id: { $ne: productId },
-//     }).limit(3);
+    const similarProducts = await Product.find({
+      _id: { $ne: productId },
+    }).limit(3);
 
-//     return similarProducts;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+    return similarProducts;
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 // export async function addUserEmailToProduct(productId: string, userEmail: string) {
 //   try {
