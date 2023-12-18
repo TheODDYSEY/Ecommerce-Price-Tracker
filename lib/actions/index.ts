@@ -6,19 +6,15 @@ import { connectToDB } from "../mongoose";
 import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
+// import { generateEmailBody, sendEmail } from "../nodemailer";
 
-interface ScrapedProduct {
-  url: string;
-  currentPrice: number;
-  // include other properties as needed
-}
 export async function scrapeAndStoreProduct(productUrl: string) {
   if(!productUrl) return;
 
   try {
     connectToDB();
 
-    const scrapedProduct: ScrapedProduct = await scrapeAmazonProduct(productUrl);
+    const scrapedProduct = await scrapeAmazonProduct(productUrl);
 
     if(!scrapedProduct) return;
 
@@ -52,6 +48,7 @@ export async function scrapeAndStoreProduct(productUrl: string) {
     throw new Error(`Failed to create/update product: ${error.message}`)
   }
 }
+
 export async function getProductById(productId: string) {
   try {
     connectToDB();
