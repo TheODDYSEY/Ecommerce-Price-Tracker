@@ -7,7 +7,11 @@ import { scrapeAmazonProduct } from "../scraper";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { User } from "@/types";
 
-
+interface ScrapedProduct {
+  url: string;
+  currentPrice: number;
+  // include other properties as needed
+}
 export async function scrapeAndStoreProduct(productUrl: string) {
   if(!productUrl) return;
 
