@@ -110,9 +110,9 @@ export function getAveragePrice(priceList: PriceHistoryItem[]) {
 //   return null;
 // };
 
-// export const formatNumber = (num: number = 0) => {
-//   return num.toLocaleString(undefined, {
-//     minimumFractionDigits: 0,
-//     maximumFractionDigits: 0,
-//   });
-// };
+export const formatNumber = (num: number = 0) => {
+  return num.toLocaleString(undefined, {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+};
