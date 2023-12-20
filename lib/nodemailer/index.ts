@@ -1,5 +1,7 @@
-import { EmailProductInfo,NotificationType } from '@/types';
+import { EmailContent, EmailProductInfo,NotificationType } from '@/types';
 import nodemailer from 'nodemailer';
+
+export const THRESHOLD_PERCENTAGE = 40;
 
 export const Notification = {
     WELCOME:'WELCOME',
@@ -77,3 +79,27 @@ export async function generateEmailBody(
   
     return { subject, body };
   }
+
+  const transporter = nodemailer.createTransport({
+    pool:true,
+    service:'hotmail',
+    port:2525,
+    auth:{
+        user:'pricepointtracker@outlook.com',
+        pass:process.env.EMAIL_PASSWORD,
+    },
+    maxConnections:1
+  })
+export const sendEmail = async (emailContent:EmailContent,sendTo:string[]) => {
+    const mailOptions = {
+        from:'pricepointtracker@outlook.comf ',
+        to: sendTo,
+        html: emailContent.body,
+        subject:emailContent.subject,
+    }
+    transporter.sendEmail(mailOptions,(error:any ,info:any)=>{
+        if (error) return console.log(error);
+
+        console.log('Email sent : ', info);
+    })
+}  
