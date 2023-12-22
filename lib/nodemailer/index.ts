@@ -81,7 +81,7 @@ export async function generateEmailBody(
 }
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: "outlook",
   auth: {
     user: 'pricepointtracker@outlook.com',
     pass: 'VMkKf*GCR^f$g4:',
