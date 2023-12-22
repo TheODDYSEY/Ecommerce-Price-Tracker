@@ -81,15 +81,12 @@ export async function generateEmailBody(
 }
 
 const transporter = nodemailer.createTransport({
-  pool: true,
-  service: 'hotmail',
-  port: 2525,
+  service: "gmail",
   auth: {
     user: 'pricepointtracker@outlook.com',
     pass: 'VMkKf*GCR^f$g4:',
   },
-  maxConnections: 1
-})
+});
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
   const mailOptions = {
@@ -99,9 +96,10 @@ export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) =>
     subject: emailContent.subject,
   }
 
-  transporter.sendMail(mailOptions, (error: any, info: any) => {
-    if(error) return console.log(error);
-    
-    console.log('Email sent: ', info);
-  })
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('✅ Email sent: ', info);
+  } catch (error) {
+    console.log('❌ Failed to send email :', error);
+  }
 }
