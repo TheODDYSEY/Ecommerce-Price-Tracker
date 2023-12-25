@@ -3,6 +3,7 @@
 import { EmailContent, EmailProductInfo, NotificationType } from '@/types';
 import nodemailer from 'nodemailer';
 
+
 const Notification = {
   WELCOME: 'WELCOME',
   CHANGE_OF_STOCK: 'CHANGE_OF_STOCK',
@@ -81,16 +82,19 @@ export async function generateEmailBody(
 }
 
 const transporter = nodemailer.createTransport({
-  service: "outlook",
+  pool: true,
+  host:'smtp-mail.outlook.com',
+  port: 587,
   auth: {
-    user: 'pricepointtracker@outlook.com',
-    pass: 'VMkKf*GCR^f$g4:',
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.EMAIL_PASSWORD,
   },
+  maxConnections: 1
 });
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
   const mailOptions = {
-    from: 'pricepointtracker@outlook.com',
+    from: process.env.EMAIL_ADDRESS,
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,
