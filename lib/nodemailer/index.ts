@@ -82,23 +82,26 @@ export async function generateEmailBody(
 }
 
 const transporter = nodemailer.createTransport({
-  pool: true,
-  host:'smtp-mail.outlook.com',
+  host: 'smtp.ethereal.email',
   port: 587,
+  pool: true,
   auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.EMAIL_PASSWORD,
-  },
+    user: 'oscar12@ethereal.email',
+    pass: '2GdcTJJ9e9uNvd87pr'
+},
   maxConnections: 1
 });
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
   const mailOptions = {
-    from: process.env.EMAIL_ADDRESS,
+    from: 'oscar12@ethereal.email',
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,
   }
+  // await transporter.sendMail(mailOptions);
+
+  // return{};
 
   try {
     const info = await transporter.sendMail(mailOptions);
