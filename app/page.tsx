@@ -26,7 +26,7 @@ const Home = async () => {
             </p>
             <h1 className='head-text'>
               Unleash the Power of 
-              <span className='text-primary'> PriceWise</span>
+              <span className='text-primary'> ShopSense</span>
 
             </h1>
             <p className='mt-6'>

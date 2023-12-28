@@ -20,7 +20,7 @@ const Navbar = () => {
           alt="logo"
           />
           <p className='nav-logo'>
-            Price<span className='text-primary'>Wise</span>
+            Shop<span className='text-primary'>Sense</span>
           </p>
         </Link>
         <div className='flex items-center gap-5'>
