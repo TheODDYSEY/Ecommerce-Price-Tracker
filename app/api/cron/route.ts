@@ -7,7 +7,7 @@ import { NextResponse } from "next/server";
 
 export const maxDuration = 300;// 5 minutes
 export const dynamic = 'force-dynamic'
-export const reValidate = 0;
+export const revalidate = 0;
 
 export async function GET(){
     try {
