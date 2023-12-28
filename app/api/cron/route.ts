@@ -3,6 +3,7 @@ import { connectToDB } from "@/lib/mongoose"
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 import { scrapeAmazonProduct } from "@/lib/scraper";
 import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } from "@/lib/utils";
+import { NextResponse } from "next/server";
 
 export async function GET(){
     try {
@@ -10,7 +11,7 @@ export async function GET(){
 
         const products = await Product.find({});
 
-        if(!products) throw new Error("No prodcuts found");
+        if(!products) throw new Error("No products found");
 
         // 1.SCRAPE LATEST PRODUCTS DETAILS & UPDATE DB
 
