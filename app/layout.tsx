@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'PriceWise',
+  title: 'ShopSense',
   description: 'Track products prices',
 }
 
