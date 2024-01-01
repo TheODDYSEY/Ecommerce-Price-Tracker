@@ -26,26 +26,6 @@ The Next.js Price Tracker is a sophisticated web application designed to empower
    - The web interface, built using Next.js , provides a smooth and intuitive user experience.
    - Users can easily navigate between product listings, view detailed product pages, and manage their tracking preferences.
 
-## Problem Statement
-
-Online shoppers often face challenges in keeping track of the dynamic prices of products on various e-commerce platforms. Price fluctuations, restocks, and discounts can significantly impact purchasing decisions, and users might miss out on favorable opportunities without real-time monitoring. Additionally, manually tracking multiple products across different websites can be time-consuming and cumbersome.
-
-## Solution
-
-The Next.js Price Tracker addresses these challenges by providing a centralized platform for users to track product prices effortlessly. Key solutions include:
-
-- **Automated Tracking:** The application automates the tracking process by periodically scraping product information from supported e-commerce websites.
-
-- **Real-time Notifications:** Users receive instant notifications for critical events, ensuring they stay informed about restocks, significant price drops, and other relevant changes.
-
-- **Historical Data Analysis:** The system maintains a comprehensive price history, enabling users to analyze trends and make informed decisions based on past product pricing patterns.
-
-- **Customizable Alerts:** Users can customize their notification preferences, allowing them to receive alerts tailored to their specific tracking needs.
-
-- **User-Friendly Interface:** The web interface is designed for ease of use, allowing users to manage their tracked products efficiently and access detailed information with a few clicks.
-
-By addressing these pain points, the Next.js Price Tracker aims to enhance the online shopping experience, making it more informed, efficient, and tailored to individual preferences.
-
 ## Technologies Used
 
 The Next.js Price Tracker leverages a modern tech stack to deliver a robust and scalable solution:
