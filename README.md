@@ -1,5 +1,5 @@
 # Next.js Price Tracker
-
+![Alt text](ecoomerce-one.png)
 ## Overview
 
 The Next.js Price Tracker is a sophisticated web application designed to empower users with the ability to track product prices, receive timely notifications for significant events such as restocks and price drops, and manage their preferences seamlessly. This application serves as a centralized platform for users to monitor changes in product prices over time and make informed purchasing decisions.
@@ -9,19 +9,19 @@ The Next.js Price Tracker is a sophisticated web application designed to empower
 1. **Product Tracking:**
    - Users can add product URLs to the application for continuous tracking.
    - The application periodically scrapes product information from supported e-commerce websites to ensure up-to-date data.
-
+![Alt text](ecommerce-two.png)
 2. **Price History:**
    - The system maintains a detailed history of product prices, allowing users to visualize and analyze trends over time.
    - Historical data enables users to make informed decisions by identifying patterns and fluctuations.
-
+![Alt text](ecommerce-three.png)
 3. **Notifications:**
    - Users receive real-time notifications for specific events, including product restocks, significant price drops, and other noteworthy changes.
    - Notifications are customizable, allowing users to tailor their preferences based on individual tracking needs.
-
+![Alt text](ecommerce-four.png)
 4. **Email Notifications:**
    - The application integrates Nodemailer to send email notifications to users.
    - Users can receive personalized emails for welcome messages, restocks, lowest price alerts, and when a product surpasses a specified threshold.
-
+![Alt text](ecommerce-five.png)
 5. **User-Friendly Interface:**
    - The web interface, built using Next.js , provides a smooth and intuitive user experience.
    - Users can easily navigate between product listings, view detailed product pages, and manage their tracking preferences.
