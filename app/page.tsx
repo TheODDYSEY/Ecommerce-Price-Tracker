@@ -30,7 +30,7 @@ const Home = async () => {
 
             </h1>
             <p className='mt-6'>
-            Powerful, self-serve product and growth analytics to help you convert, engage, and retain more.
+             Track your favorite Amazon products and stay ahead of the curve with ShopSense.
             </p>
             <SearchBar/>
           </div>
