@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@vercel/analytics": "^1.1.2",
     "axios": "^1.5.1",
     "cheerio": "^1.0.0-rc.12",
     "debug": "^4.3.4",
