@@ -27,6 +27,7 @@ export default function RootLayout({
         <main className='max-w-10x1 mx-auto'>
           <Navbar/>
           {children}
+          <Analytics/>
         </main></body>
     </html>
   )
