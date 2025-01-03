@@ -9,9 +9,9 @@
   <img src="https://img.shields.io/badge/-MongoDB-green?style=for-the-badge&logo=mongodb&logoColor=white&color=47A248" alt="MongoDB" />
   <img src="https://img.shields.io/badge/-Nodemailer-yellow?style=for-the-badge&logo=nodemailer&logoColor=white&color=FFA500" alt="Nodemailer" />
 </div>
- <h1 align="center">🛒 ShopSense</h1>
  <h3 align="center">A Next.js 14-powered Price Tracking Platform</h3>
   <p align="center">Easily track product prices, receive timely notifications for significant events such as restocks and price drops, and manage your preferences seamlessly.</p> </div>
+
 ## Overview
 
 The Next.js Price Tracker is a sophisticated web application designed to empower users with the ability to track product prices, receive timely notifications for significant events such as restocks and price drops, and manage their preferences seamlessly. This application serves as a centralized platform for users to monitor changes in product prices over time and make informed purchasing decisions.
