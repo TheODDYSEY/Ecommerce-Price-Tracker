@@ -1,5 +1,5 @@
 <div align="center"> 
- <h1 align="center">🛒 ShopSense<h1><br /> <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
+ <h1 align="center">🛒 ShopSense<h1> 
  <img src="./ecoomerce-one.png"
   alt="Project Banner" /> </a> <br /> <div>
    <img src="https://img.shields.io/badge/-Next.js_14-black?style=for-the-badge&logo=nextdotjs&logoColor=white&color=000000" alt="Next.js" /> 
