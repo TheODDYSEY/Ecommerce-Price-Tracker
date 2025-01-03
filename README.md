@@ -1,5 +1,4 @@
 <div align="center"> 
- <h1 align="center">🛒 ShopSense<h1> 
  <img src="./ecoomerce-one.png"
   alt="Project Banner" /> </a> <br /> <div>
    <img src="https://img.shields.io/badge/-Next.js_14-black?style=for-the-badge&logo=nextdotjs&logoColor=white&color=000000" alt="Next.js" /> 
@@ -9,6 +8,7 @@
   <img src="https://img.shields.io/badge/-MongoDB-green?style=for-the-badge&logo=mongodb&logoColor=white&color=47A248" alt="MongoDB" />
   <img src="https://img.shields.io/badge/-Nodemailer-yellow?style=for-the-badge&logo=nodemailer&logoColor=white&color=FFA500" alt="Nodemailer" />
 </div>
+ <h1 align="center">🛒 ShopSense<h1>
  <h3 align="center">A Next.js 14-powered Price Tracking Platform</h3>
   <p align="center">Easily track product prices, receive timely notifications for significant events such as restocks and price drops, and manage your preferences seamlessly.</p> </div>
 
