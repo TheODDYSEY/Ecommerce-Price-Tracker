@@ -1,5 +1,17 @@
-# Next.js Price Tracker
-![Alt text](ecoomerce-one.png)
+<div align="center"> 
+ <h1 align="center">🛒 ShopSense<h1><br /> <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
+ <img src="./ecoomerce-one.png"
+  alt="Project Banner" /> </a> <br /> <div>
+   <img src="https://img.shields.io/badge/-Next.js_14-black?style=for-the-badge&logo=nextdotjs&logoColor=white&color=000000" alt="Next.js" /> 
+  <img src="https://img.shields.io/badge/-TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white&color=3178C6" alt="TypeScript" /> 
+  <img src="https://img.shields.io/badge/-Node.js-green?style=for-the-badge&logo=nodedotjs&logoColor=white&color=339933" alt="Node.js" />
+  <img src="https://img.shields.io/badge/-Express.js-black?style=for-the-badge&logo=express&logoColor=white&color=000000" alt="Express.js" />
+  <img src="https://img.shields.io/badge/-MongoDB-green?style=for-the-badge&logo=mongodb&logoColor=white&color=47A248" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/-Nodemailer-yellow?style=for-the-badge&logo=nodemailer&logoColor=white&color=FFA500" alt="Nodemailer" />
+</div>
+ <h1 align="center">🛒 ShopSense</h1>
+ <h3 align="center">A Next.js 14-powered Price Tracking Platform</h3>
+  <p align="center">Easily track product prices, receive timely notifications for significant events such as restocks and price drops, and manage your preferences seamlessly.</p> </div>
 ## Overview
 
 The Next.js Price Tracker is a sophisticated web application designed to empower users with the ability to track product prices, receive timely notifications for significant events such as restocks and price drops, and manage their preferences seamlessly. This application serves as a centralized platform for users to monitor changes in product prices over time and make informed purchasing decisions.
